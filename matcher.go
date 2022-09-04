@@ -17,6 +17,7 @@ var (
 
 type Match [33]string
 
+//go:generate go run github.com/dmarkham/enumer@v1.5.6 -type=MatchColumn -trimprefix Column -json
 type MatchColumn int
 
 const (
